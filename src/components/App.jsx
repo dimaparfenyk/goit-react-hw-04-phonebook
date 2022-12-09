@@ -1,6 +1,5 @@
-import { ContactDetails } from "pages/ContactDetails/ContactDetails";
-import { FilterPage } from "pages/Filter/Filter";
 import { PhonebookPage } from "pages/Phonebook/Phonebook";
+import { ContactDetails } from "pages/ContactDetails/ContactDetails"; 
 import { Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./GlobalStyles";
 import { Layout } from "./Layout/Layout";
@@ -20,7 +19,6 @@ export const App = () => {
         <Route path='/' element={<Layout />}>
           <Route path='phonebook' element={<PhonebookPage contacts={contacts} />} />
           <Route path='phonebook/:contactId' element={ <ContactDetails contacts={contacts}/>} />
-          <Route path='filter' element={<FilterPage />} />
         </Route>
       </Routes>
       <GlobalStyle/>
