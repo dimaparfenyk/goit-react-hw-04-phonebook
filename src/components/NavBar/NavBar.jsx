@@ -2,7 +2,10 @@ import { HeaderNav, StyledLink } from "./NavBar.styled";
 
 const navItems = [
     { href: 'phonebook', text: 'Phonebook' },
-    { href: 'filter', text: 'Filter' },
+    { href: 'colorpicker', text: 'ColorPicker' },
+    { href: 'counter', text: 'Counter' },
+    { href: 'pokemon', text: 'Pokemon' },
+    { href: 'signup', text: 'Sign Up' },
 ];
 
 export const NavBar = () => {

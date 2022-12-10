@@ -1,5 +1,4 @@
-import { NavLink } from "react-router-dom";
-import { List, ListItem, Name, Number } from "./ContactList.styled";
+import { List, ListItem, Name, Number, StyledNavLink } from "./ContactList.styled";
 
 export const ContactsList = ({ users }) => {
     return (
@@ -7,10 +6,10 @@ export const ContactsList = ({ users }) => {
             {users.map(({ id, name, number }) =>
                 <ListItem
                     key={id}>
-                    <NavLink to={id}>
+                    <StyledNavLink to={id}>
                     <Name>{name}:</Name>
                     <Number>{number}</Number> 
-                    </NavLink>  
+                    </StyledNavLink>  
                 </ListItem>)}
         </List>
     );

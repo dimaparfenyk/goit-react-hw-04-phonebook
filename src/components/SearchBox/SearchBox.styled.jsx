@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const SearchInput = styled.input`
-    width: 280px;
+    width: 320px;
     height: 28px;
     margin: 0 auto;
     border-radius: 8px;
-    border: 2px solid #07c;
+    border: 2px solid #00cc71;
+    :hover{
+       scale:1.02;
+       transition-duration:300ms;
+    }
 `;
 
 export const Container = styled.div`

@@ -23,6 +23,7 @@ export const StyledLink = styled(NavLink)`
   justify-content:center;
   padding: ${p => p.theme.space[3]}px;
   text-decoration: none;
+  text-transform: uppercase;
   width:80px;
   height: 30px;
   color: ${p => p.theme.colors.text};

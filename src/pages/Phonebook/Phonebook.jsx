@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ContactsList } from "components/ContactsList/ContactList"
-import { Container } from "components/SearchBox/SearchBar.styled"
+import { Container } from "components/SearchBox/SearchBox.styled"
 import { Title } from "./Phonebook.styled"
 import { SearchBox } from "components/SearchBox/SearchBox";
+import { ContactForm } from "components/ContactForm/ContactForm";
 
 export const PhonebookPage = ({ contacts }) => {
     const [contactItems, setContactItems] = useState(contacts);
@@ -27,11 +28,12 @@ export const PhonebookPage = ({ contacts }) => {
         <main>
             <Container>
                 <Title>Phonebook Page</Title>
+                <ContactForm/>
+                {contactItems.length > 0 &&
+                    <ContactsList users={visibleContacts} />}
                 <SearchBox
                     value={filterParam}
                     onChange={changeFilter} />
-                {contactItems.length > 0 &&
-                    <ContactsList users={visibleContacts} />}
             </Container>
         </main>
     );

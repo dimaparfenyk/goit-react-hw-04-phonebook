@@ -22,6 +22,7 @@ export const StyledLink = styled(NavLink)`
   }
   :hover:not(.active) {
     color: ${p => p.theme.colors.primary};
+    transition-duration:300ms;
   }
 `;
 

@@ -1,4 +1,4 @@
-import { Container, SearchInput } from "./SearchBar.styled"
+import { Container, SearchInput } from "./SearchBox.styled"
 
 export const SearchBox = ({onChange, value}) => {
     return (
