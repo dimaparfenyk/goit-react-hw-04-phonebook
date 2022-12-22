@@ -6,6 +6,7 @@ const navItems = [
     { href: 'counter', text: 'Counter' },
     { href: 'pokemon', text: 'Pokemon' },
     { href: 'signup', text: 'Sign Up' },
+    { href: 'clock', text: 'Clock' },
 ];
 
 export const NavBar = () => {

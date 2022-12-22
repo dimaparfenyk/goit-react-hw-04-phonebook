@@ -19,7 +19,7 @@ margin-bottom:-12px;
 export const ContactInput = styled.input`
     width: 320px;
     height: 28px;
-    margin-bottom:12px;
+    margin-bottom:16px;
     border-radius: 8px;
     border: 2px solid #00cc71;
     :hover{

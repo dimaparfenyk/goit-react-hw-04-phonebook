@@ -5,6 +5,8 @@ import { GlobalStyle } from "./GlobalStyles";
 import { Layout } from "./Layout/Layout";
 import { Counter } from "pages/Counter/Counter";
 import { ColorPicker } from "pages/ColorPicker/ColorPicker";
+import { SignUp } from "pages/SignUp/SignUp";
+import { Clock } from "pages/Clock/Clock";
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -33,8 +35,9 @@ export const App = () => {
           <Route path='phonebook/:contactId' element={<ContactDetails contacts={contacts} />} />
           <Route path='colorpicker' element={<ColorPicker colors={colorPickerOptions} />} />
           <Route path='counter' element={<Counter />} />
-          <Route path='signup' element={<div>SignUp</div>} />
+          <Route path='signup' element={<SignUp/>} />
           <Route path='pokemon' element={<div>Pokemon</div>} />
+          <Route path='clock' element={<Clock/>} />
         </Route>
       </Routes>
       <GlobalStyle/>
