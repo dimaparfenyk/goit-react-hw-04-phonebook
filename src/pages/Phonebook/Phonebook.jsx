@@ -7,13 +7,12 @@ import { SearchBox } from "components/SearchBox/SearchBox";
 import { ContactForm } from "components/ContactForm/ContactForm";
 
 export const PhonebookPage = ({ contacts }) => {
-    const [contactItems, setContactItems] = useState(contacts);
+    const [contactItems] = useState(contacts);
     const [searchParams, setSearchParams] = useSearchParams();
     const filterParam = searchParams.get('name') ?? '';
     
     //  const [filter, setFilter] = useState('');
     // const changeFilter = e => setFilter(e.target.value);
-    console.log(setContactItems);
     const changeFilter = e => {
         const value = e.target.value;
         setSearchParams(value !== '' ? ({ name: value }) : {});
@@ -23,6 +22,18 @@ export const PhonebookPage = ({ contacts }) => {
         contact.name.toLowerCase().includes(filterParam.toLowerCase()));
    
     const visibleContacts = fileredContactList();
+
+    const logger = time => {
+        console.log(`Лог через ${time}ms, потому что не отменили таймаут`);
+    };
+
+    const timerId = setInterval(logger, 2000, 2000);
+    console.log(timerId);
+    const shouldCancelTimer = Math.random() > 0.5;
+    console.log(shouldCancelTimer);
+    if (shouldCancelTimer) {
+        clearInterval(timerId)
+    }
 
     return (
         <main>

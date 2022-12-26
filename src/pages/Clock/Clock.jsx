@@ -24,7 +24,7 @@ export const Clock = () => {
             <Container>
             <ClockFace>Current time:{time.toLocaleTimeString()}</ClockFace>
             <Button type="button" onClick={stop}>
-            Остановить
+            Stop Time
             </Button>
             </Container>
         </main>)
