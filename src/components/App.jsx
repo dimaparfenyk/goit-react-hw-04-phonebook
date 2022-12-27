@@ -7,7 +7,7 @@ import { Counter } from "pages/Counter/Counter";
 import { ColorPicker } from "pages/ColorPicker/ColorPicker";
 import { SignUp } from "pages/SignUp/SignUp";
 import { Clock } from "pages/Clock/Clock";
-import PokemonView from "pages/Pokemon/PokemonPage";
+import {PokemonView} from "pages/Pokemon/PokemonPage";
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },

@@ -1,5 +1,5 @@
 import { ImSpinner } from 'react-icons/im';
-import PokemonDataView from './DataView';
+import {PokemonDataView} from './DataView';
 import pendingImage from './pending.png';
 
 const styles = {
@@ -11,7 +11,7 @@ const styles = {
   },
 };
 
-export default function PokemonPendingView({ pokemonName }) {
+export const PokemonPendingView=({ pokemonName })=> {
   const pokemon = {
     name: pokemonName,
     sprites: {

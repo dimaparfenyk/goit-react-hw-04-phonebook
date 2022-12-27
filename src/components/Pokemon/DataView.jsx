@@ -1,4 +1,4 @@
-export default function PokemonDataView({ pokemon: { sprites, name, stats } }) {
+export const PokemonDataView=({ pokemon: { sprites, name, stats } }) =>{
   return (
     <div>
       <img

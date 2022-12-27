@@ -1,7 +1,10 @@
-export default function PokemonErrorView({ message }) {
+import errorImage from './error.jpg'
+
+export const PokemonErrorView=() =>{
   return (
     <div role="alert">
-      <p>{message}</p>
+      <img src={errorImage} width="240" alt="sadcat" />
+      {/* <p>{message}</p> */}
     </div>
   );
 }

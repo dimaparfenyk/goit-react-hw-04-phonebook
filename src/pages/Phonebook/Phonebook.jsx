@@ -23,18 +23,6 @@ export const PhonebookPage = ({ contacts }) => {
    
     const visibleContacts = fileredContactList();
 
-    const logger = time => {
-        console.log(`Лог через ${time}ms, потому что не отменили таймаут`);
-    };
-
-    const timerId = setInterval(logger, 2000, 2000);
-    console.log(timerId);
-    const shouldCancelTimer = Math.random() > 0.5;
-    console.log(shouldCancelTimer);
-    if (shouldCancelTimer) {
-        clearInterval(timerId)
-    }
-
     return (
         <main>
             <Container>
